@@ -3,22 +3,28 @@
 body {
   background-color: #ededed;
 }
+
+.picker {
+  min-height: 60px;
+  font-size: 0.8rem;
+}
+
 .filters {
-  margin-top: 35px;
-  background: white;
-  width: 100%;
+  margin-top: 55px;
   font-size: 1rem;
 }
 .filters li {
   display: inline-block;
-  max-width: 80px;
-  min-height: 50px;
+  max-width: 110px;
+  min-height: 60px;
   padding: 3px;
 }
 .filters li label {
+  text-align: center;
   display: block;
   font-size: 0.6rem;
   font-weight: 900;
+  margin-bottom: 5px;
 }
 .filters li input {
   width: 100%;

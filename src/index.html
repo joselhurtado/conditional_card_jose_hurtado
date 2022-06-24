@@ -3,90 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Conditional Profile with Vanilla.js Excercise</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+    <link rel="stylesheet" href="/src/style/index.scss" />
+    <script src="/src/js/index.js"></script>
   </head>
 
   <body>
-    <ul class="filters">
-      <li>
-        <label>Include Cover</label>
-        <select class="picker" for="includeCover">
-          <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
-        </select>
-      </li>
-      <li>
-        <label>Name</label>
-        <input class="picker" for="name" type="text" />
-      </li>
-      <li>
-        <label>Last Name</label>
-        <input class="picker" for="lastname" type="text" />
-      </li>
-      <li>
-        <label>S.M. Position</label>
-        <select class="picker" for="socialMediaPosition">
-          <option value="position-left">Left</option>
-          <option value="position-right">Right</option>
-        </select>
-      </li>
-      <li>
-        <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
-      </li>
-      <li>
-        <label>Github</label>
-        <input class="picker" for="github" type="text" />
-      </li>
-      <li>
-        <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
-      </li>
-      <li>
-        <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
-      </li>
-      <li>
-        <label>Role</label>
-        <select class="picker" for="role">
-          <option value="">null</option>
-          <option value="Web Developer">Web Developer</option>
-          <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
-        </select>
-      </li>
-      <li>
-        <label>City</label>
-        <select class="picker" for="city">
-          <option value="">null</option>
-          <option value="Miami">Miami</option>
-          <option value="Munich">Munich</option>
-          <option value="Caracas">Caracas</option>
-          <option value="Toronto">Toronto</option>
-        </select>
-      </li>
-      <li>
-        <label>Country</label>
-        <select class="picker" for="country">
-          <option value="">null</option>
-          <option value="USA">USA</option>
-          <option value="Germany">Germany</option>
-          <option value="Canada">Canada</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
-      </li>
-    </ul>
-    <div id="widget_content"></div>
+    <div class="container">
+      <ul class="filters">
+        <li>
+          <label>Include Cover</label>
+          <select class="picker" for="includeCover">
+            <option value="">Include Cover</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+        </li>
+        <li>
+          <label>First</label>
+          <input class="picker" for="name" type="text" placeholder="First" />
+        </li>
+        <li>
+          <label>Last</label>
+          <input class="picker" for="lastname" type="text" placeholder="Last" />
+        </li>
+        <li>
+          <label>S.M. Position</label>
+          <select class="picker" for="socialMediaPosition">
+            <option value="">Select</option>
+            <option value="position-right">Right</option>
+            <option value="position-left">Left</option>
+          </select>
+        </li>
+        <li>
+          <label>Twitter</label>
+          <input
+            class="picker"
+            for="twitter"
+            type="text"
+            placeholder="Twitter"
+          />
+        </li>
+        <li>
+          <label>Github</label>
+          <input class="picker" for="github" type="text" placeholder="Github" />
+        </li>
+        <li>
+          <label>LinkedIn</label>
+          <input
+            class="picker"
+            for="linkedin"
+            type="text"
+            placeholder="Linkedin"
+          />
+        </li>
+        <li>
+          <label>Instagram</label>
+          <input
+            class="picker"
+            for="instagram"
+            type="text"
+            placeholder="Instagram"
+          />
+        </li>
+        <li>
+          <label>Role</label>
+          <select class="picker" for="role">
+            <option value="">Select</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Floor Planner">Floor Planner</option>
+            <option value="Technical Writter">Technical Writter</option>
+          </select>
+        </li>
+        <li>
+          <label>City</label>
+          <select class="picker" for="city">
+            <option value="">Select</option>
+            <option value="Miami">Miami</option>
+            <option value="Munich">Munich</option>
+            <option value="Caracas">Caracas</option>
+            <option value="Toronto">Toronto</option>
+          </select>
+        </li>
+        <li>
+          <label>Country</label>
+          <select class="picker" for="country">
+            <option value="">Select</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Canada">Canada</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </li>
+      </ul>
+      <div class="container" id="widget_content"></div>
+    </div>
+    <div class="bottom text-center">
+      <span>
+        Made with ☕
+        <a
+          href="https://hurtadojose.com"
+          title="Made by Jose Hurtado"
+          target="_blank"
+          rel="noopener"
+        >
+          Jose Hurtado</a
+        ></span
+      >
+    </div>
 
     <!-- do not remove this bundle.js tag -->
-    <script type="text/javascript" src="/main.bundle.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
   </body>
 </html>

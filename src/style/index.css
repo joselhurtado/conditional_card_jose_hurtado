@@ -1,15 +1,23 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  background-color: #ededed;
+}
 .filters {
+  margin-top: 35px;
   background: white;
   width: 100%;
+  font-size: 1rem;
 }
 .filters li {
   display: inline-block;
   max-width: 80px;
+  min-height: 50px;
   padding: 3px;
 }
 .filters li label {
   display: block;
-  font-size: 12px;
+  font-size: 0.6rem;
   font-weight: 900;
 }
 .filters li input {
@@ -20,15 +28,15 @@
 }
 .widget {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 400px;
+  height: 450px;
   margin: 50px auto;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 .widget .cover {
-  height: 160px;
+  min-height: 200px;
   overflow: hidden;
 }
 .widget .cover img {
@@ -39,10 +47,11 @@
 }
 .widget .photo {
   position: absolute;
-  top: 85px;
-  left: 50%;
-  width: 100px;
-  height: 100px;
+  top: 95px;
+  left: 45%;
+  right: 55%;
+  width: 150px;
+  height: 150px;
   margin: 0 0 0 -55px;
   border: 5px solid #fff;
   border-radius: 50%;
@@ -54,17 +63,17 @@
   margin: 10px 0;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #999;
 }
 .widget h1 {
   margin: 60px 0 20px;
-  font-size: 26px;
+  font-size: 1.5rem;
   color: #000;
 }
 .widget h3 {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 .widget ul {
   position: absolute;
@@ -73,10 +82,10 @@
   background: #2cdfd3;
 }
 .widget ul.position-left {
-  left: -26px;
+  left: -30px;
 }
 .widget ul.position-right {
-  right: -27px;
+  right: -30px;
 }
 .widget ul li {
   list-style: none;

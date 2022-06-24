@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #00213f, #0b5da9, #23d5ab, #d87000);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -61,7 +61,7 @@ body {
   margin: 50px auto;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 .widget .cover {
@@ -111,7 +111,7 @@ body {
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #00a199;
+  background: #00213f;
   cursor: pointer;
 }
 .widget ul.position-left {
@@ -132,11 +132,12 @@ body {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  border-bottom: 1px solid #2cd5ca;
+  border-bottom: 1px solid #ddd;
   transition: background-color 0.3s;
 }
 .widget ul li:hover > a {
-  background-color: #2cd5ca;
+  background-color: #fff;
+  color: #00213f;
   cursor: pointer;
 }
 .widget ul li:first-child > a {

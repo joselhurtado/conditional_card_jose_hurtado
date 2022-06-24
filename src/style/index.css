@@ -1,7 +1,22 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body {
-  background-color: #ededed;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .picker {
@@ -18,6 +33,7 @@ body {
   max-width: 110px;
   min-height: 60px;
   padding: 3px;
+  border-radius: 5px !important;
 }
 .filters li label {
   text-align: center;
@@ -25,13 +41,19 @@ body {
   font-size: 0.6rem;
   font-weight: 900;
   margin-bottom: 5px;
+  color: #fff;
 }
 .filters li input {
   width: 100%;
+  cursor: pointer;
+  border-radius: 5px !important;
 }
 .filters li select {
   width: 100%;
+  cursor: pointer;
+  border-radius: 5px !important;
 }
+
 .widget {
   position: relative;
   width: 400px;
@@ -40,16 +62,19 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .widget .cover {
-  min-height: 200px;
+  height: 200px;
   overflow: hidden;
+  background-color: #00213f;
+  border-radius: 10px 10px 0px 0px;
 }
 .widget .cover img {
+  height: 200px;
+  overflow: hidden;
   width: 100%;
-  height: auto;
-  min-height: 160px;
-  border-radius: 4px 4px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .widget .photo {
   position: absolute;
@@ -76,7 +101,8 @@ body {
 .widget h1 {
   margin: 60px 0 20px;
   font-size: 1.5rem;
-  color: #000;
+  color: rgb(80, 80, 80);
+  font-weight: 600;
 }
 .widget h3 {
   font-size: 0.8rem;
@@ -85,16 +111,20 @@ body {
   position: absolute;
   top: 20px;
   padding: 0;
-  background: #2cdfd3;
+  background: #00a199;
+  cursor: pointer;
 }
 .widget ul.position-left {
   left: -30px;
+  cursor: pointer;
 }
 .widget ul.position-right {
   right: -30px;
+  cursor: pointer;
 }
 .widget ul li {
   list-style: none;
+  cursor: pointer;
 }
 .widget ul li a {
   display: block;
@@ -107,6 +137,7 @@ body {
 }
 .widget ul li:hover > a {
   background-color: #2cd5ca;
+  cursor: pointer;
 }
 .widget ul li:first-child > a {
   border-radius: 0 3px 0 0;
@@ -114,4 +145,25 @@ body {
 .widget ul li:last-child > a {
   border: none;
   border-radius: 0 0 3px 0;
+}
+
+.smallCopy {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+a:link {
+  color: #00213f;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #00213f;
+}
+
+a:active {
+  color: #00213f;
 }

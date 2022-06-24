@@ -1,4 +1,6 @@
-# Conditional Profile Card
+# Conditional Profile Card Jose Hurtado
+
+<img src="/src/conditional_card_jose_hurtado.png">
 
 Note: Make sure that you have node.js installed in your computer by typing in your terminal:
 

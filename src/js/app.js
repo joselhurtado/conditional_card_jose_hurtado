@@ -40,13 +40,13 @@ function render(variables = {}) {
           </h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${variables.twitter ||
-              "Username"}" target=”_blank”><i class="fa fa-twitter"></i></a></li>
+              "Twitter"}" target=”_blank”><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://github.com/${variables.github ||
-              "Username"}" target=”_blank”><i class="fa fa-github"></i></a></li>
+              "Github"}" target=”_blank”><i class="fa fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${variables.linkedin ||
-              "Username"}" target=”_blank”><i class="fa fa-linkedin"></i></a></li>
+              "LinkedIn"}" target=”_blank”><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${variables.instagram ||
-              "Username"}" target=”_blank”><i class="fa fa-instagram"></i></a></li>
+              "Instagram"}" target=”_blank”><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;

@@ -58,7 +58,7 @@ function render(variables = {}) {
 window.onload = function() {
   window.variables = {
     // if includeCover is true the algorithm should
-    includeCover: true,
+    includeCover: false,
     // this is the url of the image that will used as background for the profile cover
     background:
       "https://bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/17844/ux-designer-portfolios-59442fc10a13700c71c7e7f0951416fe.png",

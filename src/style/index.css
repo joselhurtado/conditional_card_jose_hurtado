@@ -73,7 +73,11 @@ body {
 .widget .cover {
   height: 200px;
   overflow: hidden;
-  background-color: #00213f;
+  background-image: url("https://icsb.org/wp-content/uploads/membership-profile-uploads/profile_image_placeholder.png");
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-position: center;
+  background-size: 400px 200px;
   border-radius: 10px 10px 0px 0px;
 }
 .widget .cover img {
